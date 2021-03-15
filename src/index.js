@@ -2,6 +2,7 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
+  if (matrix.length===0){ return []}
   for (i=1; i<matrix[0].length; i+=2){
     for(j=0; j<matrix[1].length/2; j++){
       let temp=matrix[i][j];
